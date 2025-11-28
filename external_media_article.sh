@@ -6,14 +6,14 @@ set -e
 # CONFIGURATION
 ################################################################################
 
-PROJECT_DIR="/Users/blocky_mcblockface/better_Live/LiveShowSite"
+PROJECT_DIR="/Users/YOUR_USERNAME/better_Live/LiveShowSite"
 PROJECT_NAME="LiveShowSite"
 APP_NAME="entertainment"
 PYTHON_BIN="python3"
 VENV_DIR="$PROJECT_DIR/venv"
 
 # New: external locations (media and static live OUTSIDE the project folder)
-EXTERNAL_BASE="/Users/blocky_mcblockface/better_Live"
+EXTERNAL_BASE="/Users/YOUR_USERNAME/better_Live"
 MEDIA_DIR="$EXTERNAL_BASE/media"
 STATIC_DIR="$EXTERNAL_BASE/static"
 VIDEO_THUMBS_DIR="$MEDIA_DIR/video_thumbnails"
@@ -157,7 +157,9 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'dev-secret-key'
+# Generate real key and save it in a file as an Environmental Variable
 DEBUG = True
+# SET DEBUG = False in Production, 404 pages will be displayed instead of error msg.
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
@@ -1182,8 +1184,8 @@ fi
 echo "==> Collecting static files..."
 
 python manage.py collectstatic --noinput
-mkdir -p /Users/blocky_mcblockface/better_Live/LiveShowSite/static
-cp -r /Users/blocky_mcblockface/better_Live/static/. /Users/blocky_mcblockface/better_Live/LiveShowSite/static/
+mkdir -p /Users/YOUR_USERNAME/better_Live/LiveShowSite/static
+cp -r /Users/YOUR_USERNAME/better_Live/static/. /Users/blocky_mcblockface/better_Live/LiveShowSite/static/
 echo "==> Setup complete. Run server with:"
 echo "source $VENV_DIR/bin/activate && python manage.py runserver"
 
