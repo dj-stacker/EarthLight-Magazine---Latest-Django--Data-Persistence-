@@ -161,6 +161,7 @@ SECRET_KEY = 'dev-secret-key'
 DEBUG = True
 # SET DEBUG = False in Production, 404 pages will be displayed instead of error msg.
 ALLOWED_HOSTS = ['*']
+# place the domain name above during production , disable hotlinks if desired
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -240,7 +241,7 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 # Media live outside the project folder (external media dir)
-MEDIA_ROOT = Path("/Users/blocky_mcblockface/better_Live/media")
+MEDIA_ROOT = Path("/Users/YOUR_USERNAME/better_Live/media")
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_ALLOW_NONIMAGE_FILES = True
@@ -1033,7 +1034,7 @@ cat > "$PROJECT_DIR/$APP_NAME/templates/static_pages/contact.html" << 'EOF'
 {% extends "base.html" %}
 {% block content %}
 <h1>Contact Us!</h1>
-<p>Email me @ <a href="mailto:michael_mckenzie100@yahoo.com">michael_mckenzie100@yahoo.com</a></p>
+<p>Email me @ <a href="mailto: YOUR_USERNAME@yahoo.com">YOUR_USERNAME@yahoo.com</a></p>
 {% endblock %}
 EOF
 
