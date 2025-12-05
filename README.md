@@ -1,5 +1,21 @@
 About This Site
 This website was created instantly by a single bash file.
+If you have never run this file before, you must replace YOURUSERNAME in all of the paths
+with your actual username.
+Also, create the folder "~/betterLive' and run this file from inside that folder in your Terminal window.
+log on to Terminal and enter
+cd ~
+at the prompt.
+You should be in your username root folder, the one which you must replace YOURUSERNAME with this folder's name.
+do
+mkdir betterLive
+in terminal, do
+cd betterLive
+do
+chmod +x filename.sh
+do
+./filename.sh
+use the filename you named this file when you copied it or downloaded it.
 
 Django powers this site, it has data persistance from external backups.
 
@@ -32,13 +48,13 @@ This is a complete description of the new system.
 
 Each time the script is run, it performs a full rebuild of the Django project:
 
-/Users/blocky_mcblockface/better_Live/LiveShowSite
+/Users/YOURUSERNAME/better_Live/LiveShowSite
 
 The script does the following:
 
 1. Creates stable external directories for media and static files:
-   /Users/blocky_mcblockface/better_Live/media
-   /Users/blocky_mcblockface/better_Live/static
+   /Users/YOURUSERNAME/better_Live/media
+   /Users/YOURUSERNAME/better_Live/static
 
 2. Creates and activates a virtual environment inside:
    LiveShowSite/venv
@@ -101,7 +117,7 @@ The result is a fully working, authenticated, media-enabled Django site.
 
 The script uses a single stable location for backups:
 
-/Users/blocky_mcblockface/better_Live/backups
+/Users/YOURUSERNAME/better_Live/backups
 
 It creates the following backups:
 
@@ -144,9 +160,9 @@ These folders survive every rebuild and remain untouched except for restoration.
 
 The only paths outside the project the script interacts with:
 
-/Users/blocky_mcblockface/better_Live/media
-/Users/blocky_mcblockface/better_Live/static
-/Users/blocky_mcblockface/better_Live/backups
+/Users/YOURUSERNAME/better_Live/media
+/Users/YOURUSERNAME/better_Live/static
+/Users/YOURUSERNAME/better_Live/backups
 
 No other external locations are modified.
 
