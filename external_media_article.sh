@@ -1186,7 +1186,7 @@ echo "==> Collecting static files..."
 
 python manage.py collectstatic --noinput
 mkdir -p /Users/YOUR_USERNAME/better_Live/LiveShowSite/static
-cp -r /Users/YOUR_USERNAME/better_Live/static/. /Users/blocky_mcblockface/better_Live/LiveShowSite/static/
+cp -r /Users/YOUR_USERNAME/better_Live/static/. /Users/YOUR_USERNAME/better_Live/LiveShowSite/static/
 echo "==> Setup complete. Run server with:"
 echo "source $VENV_DIR/bin/activate && python manage.py runserver"
 
